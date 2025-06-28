@@ -23,15 +23,15 @@
     top: 20%; /* Ajusta la posición vertical */
     left: 50%;
     transform: translateX(-50%);
-    color: white; /* Texto blanco para contrastar */
+    color: white; 
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     z-index: 1; /* Asegura que esté sobre la imagen */
 }
 
 .buttonsContainer {
     position: absolute;
-    bottom: 20%; /* Ajusta la posición vertical */
+    bottom: 20%; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
