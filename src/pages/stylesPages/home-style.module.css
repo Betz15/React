@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    position: relative; /* Necesario para posicionar hijos absolutos */
+    position: relative; 
 }
 
 .mainContent {
-    position: relative; /* Contenedor relativo para la superposición */
+    position: relative; 
     width: 100%;
 }
 
 .imagen {
     width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
-    display: block; /* Elimina espacios no deseados */
-    object-fit: cover; /* Cubre el área sin distorsionar */
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
     border-radius: 20px;
 }
 
