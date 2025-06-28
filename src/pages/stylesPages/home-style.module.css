@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Necesario para posicionar hijos absolutos */
+}
+
+.mainContent {
+    position: relative; /* Contenedor relativo para la superposición */
+    width: 100%;
+}
+
+.imagen {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    display: block; /* Elimina espacios no deseados */
+    object-fit: cover; /* Cubre el área sin distorsionar */
+    border-radius: 20px;
+}
+
+.title {
+    position: absolute;
+    top: 20%; /* Ajusta la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Texto blanco para contrastar */
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    z-index: 1; /* Asegura que esté sobre la imagen */
+}
+
+.buttonsContainer {
+    position: absolute;
+    bottom: 20%; /* Ajusta la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 1; /* Asegura que esté sobre la imagen */
+}
+
+.button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deliveryButton {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.pickupButton {
+    background-color: #4ecdc4;
+    color: white;
+}
